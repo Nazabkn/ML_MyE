@@ -1,0 +1,5 @@
+outs:
+- md5: 40adde60f438cb224305e945b960be8c
+  size: 3452981
+  hash: md5
+  path: neo_v2.parquet
