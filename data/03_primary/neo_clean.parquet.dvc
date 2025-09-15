@@ -1,0 +1,5 @@
+outs:
+- md5: 3c47acd9d56efae7b87f144f72cbd4f3
+  size: 1354138
+  hash: md5
+  path: neo_clean.parquet

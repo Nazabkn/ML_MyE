@@ -66,10 +66,17 @@ preprocessed_neo_v2:
   filepath: data/02_intermediate/preprocessed_neo_v2.parquet
 
 
-
 model_input_table:
   type: pandas.ParquetDataset
   filepath: data/03_primary/model_input_table.parquet
+
+neo_clean:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/neo_clean.parquet
+
+meteorites_clean:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/meteorites_clean.parquet
 
 
 
@@ -79,14 +86,7 @@ asteroid_model:
   versioned: true
 
 
+
 model_output:
   type: pandas.ParquetDataset
   filepath: data/07_model_output/model_output.parquet
-
-  neo_clean:
-  type: pandas.ParquetDataset
-  filepath: data/03_primary/neo_clean.parquet
-
-meteorites_clean:
-  type: pandas.ParquetDataset
-  filepath: data/03_primary/meteorites_clean.parquet

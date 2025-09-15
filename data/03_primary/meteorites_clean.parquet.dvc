@@ -1,0 +1,5 @@
+outs:
+- md5: 905d2316debf129b12f5d50d6e019118
+  size: 1685563
+  hash: md5
+  path: meteorites_clean.parquet
