@@ -1,100 +1,153 @@
-# spaceflights
+ ⭐ Proyecto ML Astronomía – CRISP-DM ⭐
 
-[![Powered by Kedro](https://img.shields.io/badge/powered_by-kedro-ffc900?logo=kedro)](https://kedro.org)
+Este repositorio contiene un proyecto de Machine Learning desarrollado con Kedro, siguiendo la metodología CRISP-DM hasta la Fase 3 (Preparación de los Datos). El enfoque está en la exploración y preparación de datos astronómicos (asteroides y meteoritos) para futuros modelos predictivos.
+___________________________________________________________________________
 
-## Overview
+♡  ∩____∩ 
+  („• ֊ •„)♡
+|￣U U￣￣￣￣￣￣￣￣￣|
+|  Estructura!        |   
+￣￣￣￣￣￣￣￣￣￣￣￣
 
-This is your new Kedro project, which was generated using `kedro 1.0.0`.
+spaceflights/
+  conf/                  (Configuración de Kedro)
+      base/catalog.yml    (Catálogo de datasets)
 
-Take a look at the [Kedro documentation](https://docs.kedro.org) to get started.
+   data/
+     01_raw/              (Datos originales)
+       02_intermediate/   (Datos limpios y preprocesados)
+       03_primary/        (Datos unificados)
 
-## Rules and guidelines
+   notebooks/             Notebooks de análisis
+       01_business.ipynb
+       02_data_understanding.ipynb
+       03_preprocessing.ipynb
 
-In order to get the best out of the template:
+   src/spaceflights/      
+        pipelines/
+        data_processing/
+        __ini__.py
 
-* Don't remove any lines from the `.gitignore` file we provide
-* Make sure your results can be reproduced by following a [data engineering convention](https://docs.kedro.org/en/stable/faq/faq.html#what-is-data-engineering-convention)
-* Don't commit data to your repository
-* Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
+ requirements.txt       
+ README.md             
+ dvc.yaml / .dvc/       
 
-## How to install dependencies
+___________________________________________________________________________
 
-Declare any dependencies in `requirements.txt` for `pip` installation.
 
-To install them, run:
+｡ﾟﾟ･ ｡ ･ﾟﾟ ｡ 
+ﾟ。Datasets utilizados:
+　ﾟ･｡ ･ﾟ 
 
-```
+1. Near Earth Objects (NEO) API de NASA
+
+
+2. Neo_v2 (Venia en conjunto con NEO)
+
+
+3. Meteorite Landings
+
+
+
+Estos datasets se encuentran en data/01_raw luego fueron procesados para que esten en el data/03_primary :D
+
+
+___________________________________________________________________________
+
+
+𐙚¡El uso de la metodología CRISP-DM en el proyecto!𐙚
+ 
+Fase 1 – Comprensión del Negocio
+
+La definición
+
+Los objetivos
+
+La documentación del plan en notebooks/01_business.ipynb :D
+--------------------------------------------------------------------
+
+Fase 2 – Comprensión de los Datos
+
+Recolección de 3 datasets astronómicos
+
+Exploración inicial de datos con estadísticas y visualizaciones
+
+Habian dos dataset igual asi :'v 
+
+Identificación de valores nulos, tipos de variables y calidad de los datos
+----------------------------------------------------------------------
+
+Fase 3 – Preparación de los Datos
+
+Limpieza de columnas con valores nulos
+
+´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
+Extracción de año desde el nombre de los asteroides
+
+Promedio del diámetro estimado
+
+Transformaciones logarítmicas
+´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
+
+Unificación de meteoritos y asteroides por año en model_input_table.parquet
+
+Resultados documentados en 03_preprocessing.ipynb
+
+
+
+___________________________________________________________________________
+
+
+ /\ _/\
+( • . •)
+/~     \  Instalación y ejecución
+
+1.- Clonar el repositorio
+
+git clone https://github.com/Nazabkn/ML_MyE.git
+cd ML_MyE
+
+2.- Crear entorno virtual e instalar dependencias
+
+python -m venv .venv
+.venv\Scripts\activate      (Windows)
+
+lo siento profe no hay para mac :P!, 
+broma, si hay: 
+
+source .venv/bin/activate    (Mac o linux)
+
 pip install -r requirements.txt
-```
 
-## How to run your Kedro pipeline
+3. Ejecutar Kedro
 
-You can run your Kedro project with:
+Para correr todo el pipeline:
 
-```
 kedro run
-```
 
-## How to test your Kedro project
 
-Have a look at the files `tests/test_run.py` and `tests/pipelines/data_science/test_pipeline.py` for instructions on how to write your tests. Run the tests as follows:
+4. Sincronizar datos con DVC
 
-```
-pytest
-```
+Este repo usa DVC con DagsHub para almacenar datos versionados:
 
-You can configure the coverage threshold in your project's `pyproject.toml` file under the `[tool.coverage.report]` section.
+dvc pull   esta es para descargar datos
+dvc push   y esta para subir cambios
 
-## Project dependencies
+___________________________________________________________________________
 
-To see and update the dependency requirements for your project use `requirements.txt`. You can install the project requirements with `pip install -r requirements.txt`.
 
-[Further information about project dependencies](https://docs.kedro.org/en/stable/kedro_project_setup/dependencies.html#project-specific-dependencies)
+  ✿   Documentación    ✿
 
-## How to work with Kedro and notebooks
+Los notebooks sirven como bitácora de trabajo y prototipado
+(No use casi ningún comentario, estaba fascinada con los comandos que encontraba en internet)
 
-> Note: Using `kedro jupyter` or `kedro ipython` to run your notebook provides these variables in scope: `catalog`, `context`, `pipelines` and `session`.
->
-> Jupyter, JupyterLab, and IPython are already included in the project requirements by default, so once you have run `pip install -r requirements.txt` you will not need to take any extra steps before you use them.
+La ejecución automatizada está en los pipelines de Kedro
 
-### Jupyter
-To use Jupyter notebooks in your Kedro project, you need to install Jupyter:
 
-```
-pip install jupyter
-```
+___________________________________________________________________________
 
-After installing Jupyter, you can start a local notebook server:
 
-```
-kedro jupyter notebook
-```
-
-### JupyterLab
-To use JupyterLab, you need to install it:
-
-```
-pip install jupyterlab
-```
-
-You can also start JupyterLab:
-
-```
-kedro jupyter lab
-```
-
-### IPython
-And if you want to run an IPython session:
-
-```
-kedro ipython
-```
-
-### How to ignore notebook output cells in `git`
-To automatically strip out all output cell contents before committing to `git`, you can use tools like [`nbstripout`](https://github.com/kynan/nbstripout). For example, you can add a hook in `.git/config` with `nbstripout --install`. This will run `nbstripout` before anything is committed to `git`.
-
-> *Note:* Your output cells will be retained locally.
-
-## Package your Kedro project
-
-[Further information about building project documentation and packaging your project](https://docs.kedro.org/en/stable/tutorial/package_a_project.html)
+---Estado del proyecto---   (˶╹ᵕ╹˶) kirby
+ 
+Este proyecto se entrega hasta Fase 3 de CRISP-DM
+Las fases posteriores (Modelado, Evaluación y Despliegue) las haré pronto, saludos!
