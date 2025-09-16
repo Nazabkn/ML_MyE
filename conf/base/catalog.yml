@@ -90,3 +90,22 @@ asteroid_model:
 model_output:
   type: pandas.ParquetDataset
   filepath: data/07_model_output/model_output.parquet
+
+
+report_neo_summary:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/report_neo_summary.csv
+  save_args:
+    index: false
+
+report_meteorites_summary:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/report_meteorites_summary.csv
+  save_args:
+    index: false
+
+
+meteorites_by_year:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/meteorites_by_year.parquet
+

@@ -1,15 +1,21 @@
-"""Project pipelines."""
-
-from kedro.framework.project import find_pipelines
+from __future__ import annotations
 from kedro.pipeline import Pipeline
+
+from spaceflights.pipelines.f01_understanding.pipeline import create_pipeline as p_understanding
+from spaceflights.pipelines.f02_preprocessing.pipeline import create_pipeline as p_preprocessing
+from spaceflights.pipelines.f03_unification.pipeline import create_pipeline as p_unification
 
 
 def register_pipelines() -> dict[str, Pipeline]:
-    """Register the project's pipelines.
+    understanding = p_understanding()
+    preprocessing = p_preprocessing()
+    unification = p_unification()
 
-    Returns:
-        A mapping from pipeline names to ``Pipeline`` objects.
-    """
-    pipelines = find_pipelines()
-    pipelines["__default__"] = sum(pipelines.values())
-    return pipelines
+    default = understanding + preprocessing + unification
+
+    return {
+        "__default__": default,
+        "understanding": understanding,
+        "preprocessing": preprocessing,
+        "unification": unification,
+    }

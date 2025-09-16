@@ -1,4 +1,4 @@
-from kedro.pipeline import Node, Pipeline
+from kedro.pipeline import Pipeline, node
 
 from .nodes import (
     compare_passenger_capacity_exp,
@@ -11,17 +11,17 @@ def create_pipeline(**kwargs) -> Pipeline:
     """This is a simple pipeline which generates a pair of plots"""
     return Pipeline(
         [
-            Node(
+            node(
                 func=compare_passenger_capacity_exp,
                 inputs="preprocessed_shuttles",
                 outputs="shuttle_passenger_capacity_plot_exp",
             ),
-            Node(
+            node(
                 func=compare_passenger_capacity_go,
                 inputs="preprocessed_shuttles",
                 outputs="shuttle_passenger_capacity_plot_go",
             ),
-            Node(
+            node(
                 func=create_confusion_matrix,
                 inputs="companies",
                 outputs="dummy_confusion_matrix",

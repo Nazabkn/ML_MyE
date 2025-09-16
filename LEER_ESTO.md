@@ -20,3 +20,9 @@ Se pueden abrir en python con pandas:
 import pandas as pd
 df = pd.read_parquet("data/01_raw/neo.parquet", engine="fastparquet")
 print(df.head()) ← ese usé para probar si todo estaba ok ( ദ്ദി ˙ᗜ˙ )
+
+El proyecto usa dvc para manejar los datasets 
+Los archivos de datos se deben obtener con:
+
+dvc pull
+ :D
