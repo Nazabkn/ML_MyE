@@ -1,0 +1,31 @@
+target: "hazardous"
+task: "classification"
+metrics:
+  primary: "f1"
+  secondary: ["recall", "roc_auc", "precision"]
+class_weight: "balanced"
+test_size: 0.2
+random_state: 42
+
+multivar:
+  numeric_cols: [
+    "est_diameter_min",
+    "est_diameter_max",
+    "relative_velocity",
+    "miss_distance",
+    "absolute_magnitude",
+    "diameter_mean",
+    "log_velocity",
+    "log_miss_distance"
+  ]
+  pca_n_components: 2
+  kmeans_k: 3
+
+cat_features:
+  - orbiting_body
+
+regression_alt:
+  target: "diameter_mean"
+  metrics:
+    primary: "mae"
+    secondary: ["r2", "rmse"]

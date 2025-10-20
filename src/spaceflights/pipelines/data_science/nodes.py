@@ -1,57 +1,64 @@
 import logging
-
 import pandas as pd
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import max_error, mean_absolute_error, r2_score
+from typing import Tuple, Dict, Any
+
 from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import f1_score, recall_score, roc_auc_score, precision_score
+from sklearn.linear_model import LogisticRegression
 
 
-def split_data(data: pd.DataFrame, parameters: dict) -> tuple:
-    """Splits data into features and targets training and test sets.
+logger = logging.getLogger(__name__)
 
-    Args:
-        data: Data containing features and target.
-        parameters: Parameters defined in parameters/data_science.yml.
-    Returns:
-        Split data.
-    """
-    X = data[parameters["features"]]
-    y = data["price"]
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=parameters["test_size"], random_state=parameters["random_state"]
+def split_data(data: pd.DataFrame, parameters: dict) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
+    target = parameters["target"]
+    X = data.drop(columns=[target])
+    y = data[target]
+    return train_test_split(
+        X, y,
+        test_size=parameters["test_size"],
+        random_state=parameters["random_state"],
+        stratify=y
     )
-    return X_train, X_test, y_train, y_test
+
+def build_pipeline(parameters: dict, feature_names: Dict[str, Any]) -> Pipeline:
+    num_features = feature_names.get("num_features", [])
+    cat_features = feature_names.get("cat_features", [])
+
+    pre = ColumnTransformer(
+        transformers=[
+            ("num", StandardScaler(), num_features),
+            ("cat", OneHotEncoder(handle_unknown="ignore"), cat_features),
+        ],
+        remainder="drop",
+    )
+
+    clf = LogisticRegression(
+        max_iter=300,
+        class_weight=parameters.get("class_weight", None)
+    )
 
 
-def train_model(X_train: pd.DataFrame, y_train: pd.Series) -> LinearRegression:
-    """Trains the linear regression model.
+    return Pipeline(steps=[("pre", pre), ("clf", clf)])
 
-    Args:
-        X_train: Training data of independent features.
-        y_train: Training data for price.
+def train_model(X_train: pd.DataFrame, y_train: pd.Series, parameters: dict, feature_names: dict):
+    pipe = build_pipeline(parameters, feature_names)
+    pipe.fit(X_train, y_train)
+    return pipe
 
-    Returns:
-        Trained model.
-    """
-    regressor = LinearRegression()
-    regressor.fit(X_train, y_train)
-    return regressor
-
-
-def evaluate_model(
-    regressor: LinearRegression, X_test: pd.DataFrame, y_test: pd.Series
-) -> dict[str, float]:
-    """Calculates and logs the coefficient of determination.
-
-    Args:
-        regressor: Trained model.
-        X_test: Testing data of independent features.
-        y_test: Testing data for price.
-    """
-    y_pred = regressor.predict(X_test)
-    score = r2_score(y_test, y_pred)
-    mae = mean_absolute_error(y_test, y_pred)
-    me = max_error(y_test, y_pred)
-    logger = logging.getLogger(__name__)
-    logger.info("Model has a coefficient R^2 of %.3f on test data.", score)
-    return {"r2_score": score, "mae": mae, "max_error": me}
+def evaluate_model(model, X_test: pd.DataFrame, y_test: pd.Series) -> Dict[str, float]:
+    y_pred = model.predict(X_test)
+    out = {
+        "f1": float(f1_score(y_test, y_pred)),
+        "recall": float(recall_score(y_test, y_pred)),
+        "precision": float(precision_score(y_test, y_pred)),
+    }
+    try:
+        y_proba = model.predict_proba(X_test)[:, 1]
+        out["roc_auc"] = float(roc_auc_score(y_test, y_proba))
+    except Exception:
+        out["roc_auc"] = None
+    logger.info("Metrics: %s", out)
+    return out

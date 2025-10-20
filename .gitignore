@@ -58,3 +58,5 @@ site/
 .vscode/
 
 
+!data/**/README.md
+!notebooks/**
