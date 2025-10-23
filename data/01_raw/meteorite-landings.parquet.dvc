@@ -1,5 +1,0 @@
-outs:
-- md5: 0e039a92d3d8d4d55df1f3b8d45622f2
-  size: 1238830
-  hash: md5
-  path: meteorite-landings.parquet

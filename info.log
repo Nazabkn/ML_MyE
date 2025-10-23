@@ -1,0 +1,787 @@
+2025-08-21 22:37:08,325 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-21 22:37:10,259 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-31 16:51:25,060 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-31 16:51:25,786 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-31 17:18:58,951 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-31 17:20:31,006 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-31 17:20:31,521 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-31 17:20:32,883 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-08-31 17:20:33,357 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-08-31 17:21:00,298 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-11 06:20:21,884 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-13 18:13:08,063 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-13 20:32:03,538 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-14 13:05:34,938 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 04:15:55,661 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 22:14:54,277 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 22:14:55,086 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 22:14:55,223 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 22:14:57,003 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipeline' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:14:57,021 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:452: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_processing' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ML\spaceflights\src\spaceflights\pipelines\data_processing\__init__.py", line 3, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML\spaceflights\src\spaceflights\pipelines\data_processing\pipeline.py", line 1, in <module>
+    from kedro.pipeline import Node, Pipeline
+ImportError: cannot import name 'Node' from 'kedro.pipeline' (C:\ML\spaceflights\.venv\Lib\site-packages\kedro\pipeline\__init__.py)
+
+  warnings.warn(
+
+2025-09-15 22:14:57,027 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:452: UserWarning: An error occurred while importing the 'spaceflights.pipelines.data_science' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ML\spaceflights\src\spaceflights\pipelines\data_science\__init__.py", line 3, in <module>
+    from .pipeline import create_pipeline  # NOQA
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML\spaceflights\src\spaceflights\pipelines\data_science\pipeline.py", line 1, in <module>
+    from kedro.pipeline import Node, Pipeline
+ImportError: cannot import name 'Node' from 'kedro.pipeline' (C:\ML\spaceflights\.venv\Lib\site-packages\kedro\pipeline\__init__.py)
+
+  warnings.warn(
+
+2025-09-15 22:14:57,029 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f01_understanding' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:14:57,033 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f02_preprocessing' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:14:57,034 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f03_unification' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:14:57,039 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:452: UserWarning: An error occurred while importing the 'spaceflights.pipelines.reporting' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py", line 444, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "C:\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ML\spaceflights\src\spaceflights\pipelines\reporting\__init__.py", line 3, in <module>
+    from .pipeline import create_pipeline
+  File "C:\ML\spaceflights\src\spaceflights\pipelines\reporting\pipeline.py", line 1, in <module>
+    from kedro.pipeline import Node, Pipeline
+ImportError: cannot import name 'Node' from 'kedro.pipeline' (C:\ML\spaceflights\.venv\Lib\site-packages\kedro\pipeline\__init__.py)
+
+  warnings.warn(
+
+2025-09-15 22:14:57,060 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 22:25:37,219 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 22:25:37,653 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 22:25:37,756 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 22:25:38,125 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipeline' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:25:42,237 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f01_understanding' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:25:42,238 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f02_preprocessing' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:25:42,239 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f03_unification' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:25:43,065 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 22:29:23,526 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 22:29:23,955 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 22:29:24,051 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 22:29:24,395 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipeline' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:29:24,991 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f01_understanding' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:29:24,992 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f02_preprocessing' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:29:24,993 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f03_unification' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:29:25,339 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 22:36:56,645 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 22:36:57,068 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 22:36:57,164 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 22:36:57,510 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipeline' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:36:58,105 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f01_understanding' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:36:58,106 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f02_preprocessing' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:36:58,107 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f03_unification' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:36:58,472 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\io\core.py:575: UserWarning: Since kedro-datasets 2.0, 'Dataset' is spelled with a lowercase 's'. Got 'pandas.CSVDataSet'.
+  warnings.warn(
+
+2025-09-15 22:36:58,485 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 22:42:52,887 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 22:42:53,309 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 22:42:53,406 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 22:42:53,749 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipeline' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:42:54,369 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f01_understanding' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:42:54,370 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f02_preprocessing' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:42:54,371 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\project\__init__.py:349: UserWarning: The 'spaceflights.pipelines.f03_unification' module does not expose a 'create_pipeline' function, so no pipelines defined therein will be returned by 'find_pipelines'.
+  warnings.warn(
+
+2025-09-15 22:42:54,747 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:08:54,379 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:08:54,841 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:08:54,949 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:08:54,997 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:09:56,355 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:09:56,864 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:09:56,974 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:09:57,008 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:12:36,905 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:12:37,360 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:12:37,479 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:12:37,513 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:14:29,299 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:14:31,172 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:14:31,454 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:14:31,525 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:19:00,583 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:19:01,038 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:19:01,142 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:19:05,043 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:19:06,090 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-15 23:19:06,095 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:19:06,764 - kedro.pipeline.node - INFO - Running node: clean_meteorites: clean_meteorites([meteorite_landings]) -> [meteorites_clean]
+2025-09-15 23:19:06,802 - kedro.io.data_catalog - INFO - Saving data to meteorites_clean (ParquetDataset)...
+2025-09-15 23:19:06,852 - kedro.runner.sequential_runner - INFO - Completed node: clean_meteorites
+2025-09-15 23:19:06,853 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-09-15 23:19:06,853 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-15 23:19:06,875 - kedro.pipeline.node - INFO - Running node: clean_neo: clean_neo([neo]) -> [neo_clean]
+2025-09-15 23:19:06,956 - kedro.io.data_catalog - INFO - Saving data to neo_clean (ParquetDataset)...
+2025-09-15 23:19:07,017 - kedro.runner.sequential_runner - INFO - Completed node: clean_neo
+2025-09-15 23:19:07,018 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-09-15 23:19:07,019 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:19:07,034 - kedro.io.data_catalog - INFO - Loading data from params:labels.meteorites (MemoryDataset)...
+2025-09-15 23:19:07,036 - kedro.pipeline.node - INFO - Running node: summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary]
+2025-09-15 23:19:07,038 - kedro.pipeline.node - ERROR - Node summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary] failed with error: 
+NDFrame.describe() got an unexpected keyword argument 'datetime_is_numeric'
+2025-09-15 23:19:07,039 - kedro.runner.sequential_runner - WARNING - There are 4 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "aggregate_meteorites_by_year,summarize_meteorites,summarize_neo"
+2025-09-15 23:21:17,917 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:21:18,353 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:21:18,465 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:21:18,889 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:21:28,453 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-15 23:21:28,460 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:21:28,522 - kedro.pipeline.node - INFO - Running node: clean_meteorites: clean_meteorites([meteorite_landings]) -> [meteorites_clean]
+2025-09-15 23:21:28,536 - kedro.io.data_catalog - INFO - Saving data to meteorites_clean (ParquetDataset)...
+2025-09-15 23:21:28,583 - kedro.runner.sequential_runner - INFO - Completed node: clean_meteorites
+2025-09-15 23:21:28,584 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-09-15 23:21:28,585 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-15 23:21:28,599 - kedro.pipeline.node - INFO - Running node: clean_neo: clean_neo([neo]) -> [neo_clean]
+2025-09-15 23:21:28,677 - kedro.io.data_catalog - INFO - Saving data to neo_clean (ParquetDataset)...
+2025-09-15 23:21:28,738 - kedro.runner.sequential_runner - INFO - Completed node: clean_neo
+2025-09-15 23:21:28,739 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-09-15 23:21:28,740 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:21:28,755 - kedro.io.data_catalog - INFO - Loading data from params:labels.meteorites (MemoryDataset)...
+2025-09-15 23:21:28,756 - kedro.pipeline.node - INFO - Running node: summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary]
+2025-09-15 23:21:28,757 - kedro.pipeline.node - ERROR - Node summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary] failed with error: 
+NDFrame.describe() got an unexpected keyword argument 'datetime_is_numeric'
+2025-09-15 23:21:28,759 - kedro.runner.sequential_runner - WARNING - There are 4 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "aggregate_meteorites_by_year,summarize_meteorites,summarize_neo"
+2025-09-15 23:24:07,352 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:24:07,792 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:24:07,896 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:24:08,284 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:24:19,153 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-15 23:24:19,155 - kedro.io.data_catalog - INFO - Loading data from meteorites_clean (ParquetDataset)...
+2025-09-15 23:24:19,226 - kedro.pipeline.node - INFO - Running node: aggregate_meteorites_by_year: aggregate_meteorites_by_year([meteorites_clean]) -> [meteorites_by_year]
+2025-09-15 23:24:19,250 - kedro.io.data_catalog - INFO - Saving data to meteorites_by_year (ParquetDataset)...
+2025-09-15 23:24:19,255 - kedro.runner.sequential_runner - INFO - Completed node: aggregate_meteorites_by_year
+2025-09-15 23:24:19,257 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2025-09-15 23:24:19,259 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:24:19,275 - kedro.io.data_catalog - INFO - Loading data from params:labels.meteorites (MemoryDataset)...
+2025-09-15 23:24:19,277 - kedro.pipeline.node - INFO - Running node: summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary]
+2025-09-15 23:24:19,317 - kedro.io.data_catalog - INFO - Saving data to report_meteorites_summary (CSVDataset)...
+2025-09-15 23:24:19,333 - kedro.runner.sequential_runner - INFO - Completed node: summarize_meteorites
+2025-09-15 23:24:19,334 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2025-09-15 23:24:19,336 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-15 23:24:19,351 - kedro.io.data_catalog - INFO - Loading data from params:labels.neo (MemoryDataset)...
+2025-09-15 23:24:19,354 - kedro.pipeline.node - INFO - Running node: summarize_neo: summarize_dataframe([neo;params:labels.neo]) -> [report_neo_summary]
+2025-09-15 23:24:19,389 - kedro.io.data_catalog - INFO - Saving data to report_neo_summary (CSVDataset)...
+2025-09-15 23:24:19,393 - kedro.runner.sequential_runner - INFO - Completed node: summarize_neo
+2025-09-15 23:24:19,395 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2025-09-15 23:24:19,396 - kedro.io.data_catalog - INFO - Loading data from neo_clean (ParquetDataset)...
+2025-09-15 23:24:19,427 - kedro.io.data_catalog - INFO - Loading data from meteorites_by_year (ParquetDataset)...
+2025-09-15 23:24:19,437 - kedro.pipeline.node - INFO - Running node: unify_by_year: unify_by_year([neo_clean;meteorites_by_year]) -> [model_input_table]
+2025-09-15 23:24:19,459 - kedro.io.data_catalog - INFO - Saving data to model_input_table (ParquetDataset)...
+2025-09-15 23:24:19,530 - kedro.runner.sequential_runner - INFO - Completed node: unify_by_year
+2025-09-15 23:24:19,532 - kedro.runner.sequential_runner - INFO - Completed 4 out of 4 tasks
+2025-09-15 23:24:19,533 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.4 sec.
+2025-09-15 23:53:01,506 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:53:02,673 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:53:24,352 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-15 23:53:24,794 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-15 23:53:24,942 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-15 23:53:27,074 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-15 23:53:27,958 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-15 23:53:27,960 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:53:28,402 - kedro.pipeline.node - INFO - Running node: clean_meteorites: clean_meteorites([meteorite_landings]) -> [meteorites_clean]
+2025-09-15 23:53:28,415 - kedro.io.data_catalog - INFO - Saving data to meteorites_clean (ParquetDataset)...
+2025-09-15 23:53:28,460 - kedro.runner.sequential_runner - INFO - Completed node: clean_meteorites
+2025-09-15 23:53:28,461 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-09-15 23:53:28,462 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-15 23:53:28,482 - kedro.pipeline.node - INFO - Running node: clean_neo: clean_neo([neo]) -> [neo_clean]
+2025-09-15 23:53:28,560 - kedro.io.data_catalog - INFO - Saving data to neo_clean (ParquetDataset)...
+2025-09-15 23:53:28,617 - kedro.runner.sequential_runner - INFO - Completed node: clean_neo
+2025-09-15 23:53:28,618 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-09-15 23:53:28,620 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-15 23:53:28,634 - kedro.io.data_catalog - INFO - Loading data from params:labels.meteorites (MemoryDataset)...
+2025-09-15 23:53:28,635 - kedro.pipeline.node - INFO - Running node: summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary]
+2025-09-15 23:53:28,667 - kedro.io.data_catalog - INFO - Saving data to report_meteorites_summary (CSVDataset)...
+2025-09-15 23:53:28,671 - kedro.runner.sequential_runner - INFO - Completed node: summarize_meteorites
+2025-09-15 23:53:28,672 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-09-15 23:53:28,673 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-15 23:53:28,688 - kedro.io.data_catalog - INFO - Loading data from params:labels.neo (MemoryDataset)...
+2025-09-15 23:53:28,690 - kedro.pipeline.node - INFO - Running node: summarize_neo: summarize_dataframe([neo;params:labels.neo]) -> [report_neo_summary]
+2025-09-15 23:53:28,722 - kedro.io.data_catalog - INFO - Saving data to report_neo_summary (CSVDataset)...
+2025-09-15 23:53:28,725 - kedro.runner.sequential_runner - INFO - Completed node: summarize_neo
+2025-09-15 23:53:28,726 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-09-15 23:53:28,727 - kedro.io.data_catalog - INFO - Loading data from meteorites_clean (ParquetDataset)...
+2025-09-15 23:53:28,750 - kedro.pipeline.node - INFO - Running node: aggregate_meteorites_by_year: aggregate_meteorites_by_year([meteorites_clean]) -> [meteorites_by_year]
+2025-09-15 23:53:28,762 - kedro.io.data_catalog - INFO - Saving data to meteorites_by_year (ParquetDataset)...
+2025-09-15 23:53:28,766 - kedro.runner.sequential_runner - INFO - Completed node: aggregate_meteorites_by_year
+2025-09-15 23:53:28,767 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-09-15 23:53:28,768 - kedro.io.data_catalog - INFO - Loading data from neo_clean (ParquetDataset)...
+2025-09-15 23:53:28,793 - kedro.io.data_catalog - INFO - Loading data from meteorites_by_year (ParquetDataset)...
+2025-09-15 23:53:28,802 - kedro.pipeline.node - INFO - Running node: unify_by_year: unify_by_year([neo_clean;meteorites_by_year]) -> [model_input_table]
+2025-09-15 23:53:28,819 - kedro.io.data_catalog - INFO - Saving data to model_input_table (ParquetDataset)...
+2025-09-15 23:53:28,885 - kedro.runner.sequential_runner - INFO - Completed node: unify_by_year
+2025-09-15 23:53:28,886 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-09-15 23:53:28,887 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.9 sec.
+2025-09-16 01:13:17,597 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-16 01:25:46,833 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-09-16 01:25:47,288 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-09-16 01:25:47,388 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-09-16 01:25:47,858 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-09-16 01:25:48,740 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-09-16 01:25:48,741 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-16 01:25:48,790 - kedro.pipeline.node - INFO - Running node: clean_meteorites: clean_meteorites([meteorite_landings]) -> [meteorites_clean]
+2025-09-16 01:25:48,805 - kedro.io.data_catalog - INFO - Saving data to meteorites_clean (ParquetDataset)...
+2025-09-16 01:25:48,853 - kedro.runner.sequential_runner - INFO - Completed node: clean_meteorites
+2025-09-16 01:25:48,854 - kedro.runner.sequential_runner - INFO - Completed 1 out of 6 tasks
+2025-09-16 01:25:48,855 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-16 01:25:48,871 - kedro.pipeline.node - INFO - Running node: clean_neo: clean_neo([neo]) -> [neo_clean]
+2025-09-16 01:25:48,950 - kedro.io.data_catalog - INFO - Saving data to neo_clean (ParquetDataset)...
+2025-09-16 01:25:49,017 - kedro.runner.sequential_runner - INFO - Completed node: clean_neo
+2025-09-16 01:25:49,019 - kedro.runner.sequential_runner - INFO - Completed 2 out of 6 tasks
+2025-09-16 01:25:49,020 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-09-16 01:25:49,038 - kedro.io.data_catalog - INFO - Loading data from params:labels.meteorites (MemoryDataset)...
+2025-09-16 01:25:49,040 - kedro.pipeline.node - INFO - Running node: summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary]
+2025-09-16 01:25:49,073 - kedro.io.data_catalog - INFO - Saving data to report_meteorites_summary (CSVDataset)...
+2025-09-16 01:25:49,078 - kedro.runner.sequential_runner - INFO - Completed node: summarize_meteorites
+2025-09-16 01:25:49,079 - kedro.runner.sequential_runner - INFO - Completed 3 out of 6 tasks
+2025-09-16 01:25:49,081 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-09-16 01:25:49,098 - kedro.io.data_catalog - INFO - Loading data from params:labels.neo (MemoryDataset)...
+2025-09-16 01:25:49,100 - kedro.pipeline.node - INFO - Running node: summarize_neo: summarize_dataframe([neo;params:labels.neo]) -> [report_neo_summary]
+2025-09-16 01:25:49,132 - kedro.io.data_catalog - INFO - Saving data to report_neo_summary (CSVDataset)...
+2025-09-16 01:25:49,135 - kedro.runner.sequential_runner - INFO - Completed node: summarize_neo
+2025-09-16 01:25:49,136 - kedro.runner.sequential_runner - INFO - Completed 4 out of 6 tasks
+2025-09-16 01:25:49,137 - kedro.io.data_catalog - INFO - Loading data from meteorites_clean (ParquetDataset)...
+2025-09-16 01:25:49,165 - kedro.pipeline.node - INFO - Running node: aggregate_meteorites_by_year: aggregate_meteorites_by_year([meteorites_clean]) -> [meteorites_by_year]
+2025-09-16 01:25:49,177 - kedro.io.data_catalog - INFO - Saving data to meteorites_by_year (ParquetDataset)...
+2025-09-16 01:25:49,181 - kedro.runner.sequential_runner - INFO - Completed node: aggregate_meteorites_by_year
+2025-09-16 01:25:49,182 - kedro.runner.sequential_runner - INFO - Completed 5 out of 6 tasks
+2025-09-16 01:25:49,183 - kedro.io.data_catalog - INFO - Loading data from neo_clean (ParquetDataset)...
+2025-09-16 01:25:49,210 - kedro.io.data_catalog - INFO - Loading data from meteorites_by_year (ParquetDataset)...
+2025-09-16 01:25:49,220 - kedro.pipeline.node - INFO - Running node: unify_by_year: unify_by_year([neo_clean;meteorites_by_year]) -> [model_input_table]
+2025-09-16 01:25:49,241 - kedro.io.data_catalog - INFO - Saving data to model_input_table (ParquetDataset)...
+2025-09-16 01:25:49,313 - kedro.runner.sequential_runner - INFO - Completed node: unify_by_year
+2025-09-16 01:25:49,314 - kedro.runner.sequential_runner - INFO - Completed 6 out of 6 tasks
+2025-09-16 01:25:49,315 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.6 sec.
+2025-10-22 22:42:11,603 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-22 22:42:12,244 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-22 22:42:12,349 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-22 22:42:12,890 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-22 22:45:29,489 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-22 22:45:29,994 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-22 22:45:30,089 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-22 22:45:31,436 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-22 22:45:32,297 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-22 22:45:32,299 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-22 22:45:32,372 - kedro.pipeline.node - INFO - Running node: pca_kmeans_analysis_node: pca_kmeans_analysis([model_input_table]) -> [pca_features;kmeans_model;pca_model]
+2025-10-22 22:45:33,888 - kedro.io.data_catalog - INFO - Saving data to pca_features (ParquetDataset)...
+2025-10-22 22:45:33,921 - kedro.io.data_catalog - INFO - Saving data to kmeans_model (PickleDataset)...
+2025-10-22 22:45:33,924 - kedro.io.data_catalog - INFO - Saving data to pca_model (PickleDataset)...
+2025-10-22 22:45:33,929 - kedro.runner.sequential_runner - INFO - Completed node: pca_kmeans_analysis_node
+2025-10-22 22:45:33,930 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2025-10-22 22:45:33,931 - kedro.io.data_catalog - INFO - Loading data from pca_features (ParquetDataset)...
+2025-10-22 22:45:33,947 - kedro.pipeline.node - INFO - Running node: generate_pca_report_node: generate_pca_report([pca_features]) -> [pca_kmeans_report]
+2025-10-22 22:45:33,954 - kedro.io.data_catalog - INFO - Saving data to pca_kmeans_report (CSVDataset)...
+2025-10-22 22:45:33,960 - kedro.runner.sequential_runner - INFO - Completed node: generate_pca_report_node
+2025-10-22 22:45:33,961 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2025-10-22 22:45:33,962 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 1.7 sec.
+2025-10-22 23:49:41,541 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-22 23:49:42,024 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-22 23:49:42,122 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-22 23:49:43,429 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-22 23:54:15,854 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-22 23:54:16,330 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-22 23:54:16,425 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-22 23:54:17,610 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-22 23:59:20,451 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-22 23:59:20,948 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-22 23:59:21,060 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-22 23:59:22,195 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-22 23:59:23,065 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-22 23:59:23,066 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-22 23:59:23,128 - kedro.pipeline.node - INFO - Running node: pca_kmeans_analysis_node: pca_kmeans_analysis([model_input_table]) -> [pca_features;kmeans_model;pca_model]
+2025-10-22 23:59:24,687 - kedro.io.data_catalog - INFO - Saving data to pca_features (ParquetDataset)...
+2025-10-22 23:59:24,694 - kedro.io.data_catalog - INFO - Saving data to kmeans_model (PickleDataset)...
+2025-10-22 23:59:24,696 - kedro.io.data_catalog - INFO - Saving data to pca_model (PickleDataset)...
+2025-10-22 23:59:24,699 - kedro.runner.sequential_runner - INFO - Completed node: pca_kmeans_analysis_node
+2025-10-22 23:59:24,700 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2025-10-22 23:59:24,701 - kedro.io.data_catalog - INFO - Loading data from pca_features (ParquetDataset)...
+2025-10-22 23:59:24,713 - kedro.pipeline.node - INFO - Running node: generate_pca_report_node: generate_pca_report([pca_features]) -> [pca_kmeans_report]
+2025-10-22 23:59:24,716 - kedro.io.data_catalog - INFO - Saving data to pca_kmeans_report (CSVDataset)...
+2025-10-22 23:59:24,721 - kedro.runner.sequential_runner - INFO - Completed node: generate_pca_report_node
+2025-10-22 23:59:24,721 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2025-10-22 23:59:24,722 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 1.7 sec.
+2025-10-22 23:59:25,282 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-22 23:59:25,716 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-22 23:59:25,811 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-22 23:59:26,885 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-22 23:59:27,708 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-22 23:59:27,710 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-22 23:59:27,754 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-22 23:59:27,755 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-22 23:59:27,758 - kedro.pipeline.node - ERROR - Node build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols] failed with error: 
+'is_hazardous'
+2025-10-22 23:59:27,759 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-10-23 00:03:31,458 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 00:03:31,912 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 00:03:32,003 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 00:03:33,120 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 00:03:33,998 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-23 00:03:34,000 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 00:03:34,046 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 00:03:34,048 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-23 00:03:34,063 - kedro.io.data_catalog - INFO - Saving data to X_train (ParquetDataset)...
+2025-10-23 00:03:34,091 - kedro.io.data_catalog - INFO - Saving data to X_test (ParquetDataset)...
+2025-10-23 00:03:34,103 - kedro.io.data_catalog - INFO - Saving data to y_train (ParquetDataset)...
+2025-10-23 00:03:34,105 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2025-10-23 00:13:39,865 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 00:13:40,333 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 00:13:40,431 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 00:13:41,527 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 00:13:42,365 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-23 00:13:42,367 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 00:13:42,417 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 00:13:42,419 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-23 00:13:42,434 - kedro.io.data_catalog - INFO - Saving data to X_train (ParquetDataset)...
+2025-10-23 00:13:42,449 - kedro.io.data_catalog - INFO - Saving data to X_test (ParquetDataset)...
+2025-10-23 00:13:42,456 - kedro.io.data_catalog - INFO - Saving data to y_train (ParquetDataset)...
+2025-10-23 00:13:42,461 - kedro.io.data_catalog - INFO - Saving data to y_test (ParquetDataset)...
+2025-10-23 00:13:42,464 - kedro.io.data_catalog - INFO - Saving data to clf_cols (MemoryDataset)...
+2025-10-23 00:13:42,466 - kedro.runner.sequential_runner - INFO - Completed node: build_splits_node
+2025-10-23 00:13:42,467 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2025-10-23 00:13:42,468 - kedro.io.data_catalog - INFO - Loading data from clf_cols (MemoryDataset)...
+2025-10-23 00:13:42,469 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 00:13:42,471 - kedro.pipeline.node - INFO - Running node: make_pipeline_node: make_pipeline([clf_cols;params:parameters_data_processing]) -> [hazardous_clf_unfitted]
+2025-10-23 00:13:42,471 - kedro.io.data_catalog - INFO - Saving data to hazardous_clf_unfitted (MemoryDataset)...
+2025-10-23 00:13:42,473 - kedro.runner.sequential_runner - INFO - Completed node: make_pipeline_node
+2025-10-23 00:13:42,474 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2025-10-23 00:13:42,474 - kedro.io.data_catalog - INFO - Loading data from hazardous_clf_unfitted (MemoryDataset)...
+2025-10-23 00:13:42,476 - kedro.io.data_catalog - INFO - Loading data from X_train (ParquetDataset)...
+2025-10-23 00:13:42,491 - kedro.io.data_catalog - INFO - Loading data from y_train (ParquetDataset)...
+2025-10-23 00:13:42,504 - kedro.pipeline.node - INFO - Running node: train_node: train([hazardous_clf_unfitted;X_train;y_train]) -> [hazardous_clf]
+2025-10-23 00:13:42,540 - kedro.io.data_catalog - INFO - Saving data to hazardous_clf (PickleDataset)...
+2025-10-23 00:13:42,544 - kedro.runner.sequential_runner - INFO - Completed node: train_node
+2025-10-23 00:13:42,545 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2025-10-23 00:13:42,546 - kedro.io.data_catalog - INFO - Loading data from hazardous_clf (PickleDataset)...
+2025-10-23 00:13:42,558 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 00:13:42,573 - kedro.io.data_catalog - INFO - Loading data from y_test (ParquetDataset)...
+2025-10-23 00:13:42,584 - kedro.pipeline.node - INFO - Running node: evaluate_node: evaluate([hazardous_clf;X_test;y_test]) -> [eval_metrics]
+2025-10-23 00:13:42,595 - kedro.io.data_catalog - INFO - Saving data to eval_metrics (CSVDataset)...
+2025-10-23 00:13:42,599 - kedro.runner.sequential_runner - INFO - Completed node: evaluate_node
+2025-10-23 00:13:42,600 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2025-10-23 00:13:42,601 - kedro.io.data_catalog - INFO - Loading data from hazardous_clf (PickleDataset)...
+2025-10-23 00:13:42,603 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 00:13:42,607 - kedro.pipeline.node - INFO - Running node: predict_node: predict([hazardous_clf;X_test]) -> [y_pred]
+2025-10-23 00:13:42,611 - kedro.io.data_catalog - INFO - Saving data to y_pred (ParquetDataset)...
+2025-10-23 00:13:42,615 - kedro.runner.sequential_runner - INFO - Completed node: predict_node
+2025-10-23 00:13:42,616 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2025-10-23 00:13:42,617 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 0.3 sec.
+2025-10-23 00:14:44,451 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 00:14:44,880 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 00:14:44,991 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 00:14:46,039 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 00:14:46,908 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-23 00:14:46,910 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-10-23 00:14:46,956 - kedro.pipeline.node - INFO - Running node: clean_meteorites: clean_meteorites([meteorite_landings]) -> [meteorites_clean]
+2025-10-23 00:14:46,968 - kedro.io.data_catalog - INFO - Saving data to meteorites_clean (ParquetDataset)...
+2025-10-23 00:14:47,012 - kedro.runner.sequential_runner - INFO - Completed node: clean_meteorites
+2025-10-23 00:14:47,013 - kedro.runner.sequential_runner - INFO - Completed 1 out of 13 tasks
+2025-10-23 00:14:47,015 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-10-23 00:14:47,032 - kedro.pipeline.node - INFO - Running node: clean_neo: clean_neo([neo]) -> [neo_clean]
+2025-10-23 00:14:47,109 - kedro.io.data_catalog - INFO - Saving data to neo_clean (ParquetDataset)...
+2025-10-23 00:14:47,167 - kedro.runner.sequential_runner - INFO - Completed node: clean_neo
+2025-10-23 00:14:47,168 - kedro.runner.sequential_runner - INFO - Completed 2 out of 13 tasks
+2025-10-23 00:14:47,168 - kedro.io.data_catalog - INFO - Loading data from meteorite_landings (ParquetDataset)...
+2025-10-23 00:14:47,184 - kedro.io.data_catalog - INFO - Loading data from params:labels.meteorites (MemoryDataset)...
+2025-10-23 00:14:47,186 - kedro.pipeline.node - INFO - Running node: summarize_meteorites: summarize_dataframe([meteorite_landings;params:labels.meteorites]) -> [report_meteorites_summary]
+2025-10-23 00:14:47,218 - kedro.io.data_catalog - INFO - Saving data to report_meteorites_summary (CSVDataset)...
+2025-10-23 00:14:47,223 - kedro.runner.sequential_runner - INFO - Completed node: summarize_meteorites
+2025-10-23 00:14:47,224 - kedro.runner.sequential_runner - INFO - Completed 3 out of 13 tasks
+2025-10-23 00:14:47,224 - kedro.io.data_catalog - INFO - Loading data from neo (ParquetDataset)...
+2025-10-23 00:14:47,239 - kedro.io.data_catalog - INFO - Loading data from params:labels.neo (MemoryDataset)...
+2025-10-23 00:14:47,241 - kedro.pipeline.node - INFO - Running node: summarize_neo: summarize_dataframe([neo;params:labels.neo]) -> [report_neo_summary]
+2025-10-23 00:14:47,269 - kedro.io.data_catalog - INFO - Saving data to report_neo_summary (CSVDataset)...
+2025-10-23 00:14:47,272 - kedro.runner.sequential_runner - INFO - Completed node: summarize_neo
+2025-10-23 00:14:47,273 - kedro.runner.sequential_runner - INFO - Completed 4 out of 13 tasks
+2025-10-23 00:14:47,274 - kedro.io.data_catalog - INFO - Loading data from meteorites_clean (ParquetDataset)...
+2025-10-23 00:14:47,300 - kedro.pipeline.node - INFO - Running node: aggregate_meteorites_by_year: aggregate_meteorites_by_year([meteorites_clean]) -> [meteorites_by_year]
+2025-10-23 00:14:47,311 - kedro.io.data_catalog - INFO - Saving data to meteorites_by_year (ParquetDataset)...
+2025-10-23 00:14:47,315 - kedro.runner.sequential_runner - INFO - Completed node: aggregate_meteorites_by_year
+2025-10-23 00:14:47,316 - kedro.runner.sequential_runner - INFO - Completed 5 out of 13 tasks
+2025-10-23 00:14:47,317 - kedro.io.data_catalog - INFO - Loading data from neo_clean (ParquetDataset)...
+2025-10-23 00:14:47,342 - kedro.io.data_catalog - INFO - Loading data from meteorites_by_year (ParquetDataset)...
+2025-10-23 00:14:47,352 - kedro.pipeline.node - INFO - Running node: unify_by_year: unify_by_year([neo_clean;meteorites_by_year]) -> [model_input_table]
+2025-10-23 00:14:47,370 - kedro.io.data_catalog - INFO - Saving data to model_input_table (ParquetDataset)...
+2025-10-23 00:14:47,433 - kedro.runner.sequential_runner - INFO - Completed node: unify_by_year
+2025-10-23 00:14:47,434 - kedro.runner.sequential_runner - INFO - Completed 6 out of 13 tasks
+2025-10-23 00:14:47,435 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 00:14:47,462 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 00:14:47,464 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-23 00:14:47,500 - kedro.io.data_catalog - INFO - Saving data to X_train (ParquetDataset)...
+2025-10-23 00:14:47,536 - kedro.io.data_catalog - INFO - Saving data to X_test (ParquetDataset)...
+2025-10-23 00:14:47,548 - kedro.io.data_catalog - INFO - Saving data to y_train (ParquetDataset)...
+2025-10-23 00:14:47,556 - kedro.io.data_catalog - INFO - Saving data to y_test (ParquetDataset)...
+2025-10-23 00:14:47,560 - kedro.io.data_catalog - INFO - Saving data to clf_cols (MemoryDataset)...
+2025-10-23 00:14:47,564 - kedro.runner.sequential_runner - INFO - Completed node: build_splits_node
+2025-10-23 00:14:47,565 - kedro.runner.sequential_runner - INFO - Completed 7 out of 13 tasks
+2025-10-23 00:14:47,565 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 00:14:47,585 - kedro.pipeline.node - INFO - Running node: pca_kmeans_analysis_node: pca_kmeans_analysis([model_input_table]) -> [pca_features;kmeans_model;pca_model]
+2025-10-23 00:14:49,142 - kedro.io.data_catalog - INFO - Saving data to pca_features (ParquetDataset)...
+2025-10-23 00:14:49,154 - kedro.io.data_catalog - INFO - Saving data to kmeans_model (PickleDataset)...
+2025-10-23 00:14:49,157 - kedro.io.data_catalog - INFO - Saving data to pca_model (PickleDataset)...
+2025-10-23 00:14:49,162 - kedro.runner.sequential_runner - INFO - Completed node: pca_kmeans_analysis_node
+2025-10-23 00:14:49,163 - kedro.runner.sequential_runner - INFO - Completed 8 out of 13 tasks
+2025-10-23 00:14:49,164 - kedro.io.data_catalog - INFO - Loading data from pca_features (ParquetDataset)...
+2025-10-23 00:14:49,178 - kedro.pipeline.node - INFO - Running node: generate_pca_report_node: generate_pca_report([pca_features]) -> [pca_kmeans_report]
+2025-10-23 00:14:49,182 - kedro.io.data_catalog - INFO - Saving data to pca_kmeans_report (CSVDataset)...
+2025-10-23 00:14:49,185 - kedro.runner.sequential_runner - INFO - Completed node: generate_pca_report_node
+2025-10-23 00:14:49,187 - kedro.runner.sequential_runner - INFO - Completed 9 out of 13 tasks
+2025-10-23 00:14:49,189 - kedro.io.data_catalog - INFO - Loading data from clf_cols (MemoryDataset)...
+2025-10-23 00:14:49,191 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 00:14:49,194 - kedro.pipeline.node - INFO - Running node: make_pipeline_node: make_pipeline([clf_cols;params:parameters_data_processing]) -> [hazardous_clf_unfitted]
+2025-10-23 00:14:49,195 - kedro.io.data_catalog - INFO - Saving data to hazardous_clf_unfitted (MemoryDataset)...
+2025-10-23 00:14:49,198 - kedro.runner.sequential_runner - INFO - Completed node: make_pipeline_node
+2025-10-23 00:14:49,199 - kedro.runner.sequential_runner - INFO - Completed 10 out of 13 tasks
+2025-10-23 00:14:49,201 - kedro.io.data_catalog - INFO - Loading data from hazardous_clf_unfitted (MemoryDataset)...
+2025-10-23 00:14:49,203 - kedro.io.data_catalog - INFO - Loading data from X_train (ParquetDataset)...
+2025-10-23 00:14:49,223 - kedro.io.data_catalog - INFO - Loading data from y_train (ParquetDataset)...
+2025-10-23 00:14:49,238 - kedro.pipeline.node - INFO - Running node: train_node: train([hazardous_clf_unfitted;X_train;y_train]) -> [hazardous_clf]
+2025-10-23 00:14:49,296 - kedro.io.data_catalog - INFO - Saving data to hazardous_clf (PickleDataset)...
+2025-10-23 00:14:49,300 - kedro.runner.sequential_runner - INFO - Completed node: train_node
+2025-10-23 00:14:49,301 - kedro.runner.sequential_runner - INFO - Completed 11 out of 13 tasks
+2025-10-23 00:14:49,302 - kedro.io.data_catalog - INFO - Loading data from hazardous_clf (PickleDataset)...
+2025-10-23 00:14:49,310 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 00:14:49,321 - kedro.io.data_catalog - INFO - Loading data from y_test (ParquetDataset)...
+2025-10-23 00:14:49,331 - kedro.pipeline.node - INFO - Running node: evaluate_node: evaluate([hazardous_clf;X_test;y_test]) -> [eval_metrics]
+2025-10-23 00:14:49,348 - kedro.io.data_catalog - INFO - Saving data to eval_metrics (CSVDataset)...
+2025-10-23 00:14:49,351 - kedro.runner.sequential_runner - INFO - Completed node: evaluate_node
+2025-10-23 00:14:49,352 - kedro.runner.sequential_runner - INFO - Completed 12 out of 13 tasks
+2025-10-23 00:14:49,352 - kedro.io.data_catalog - INFO - Loading data from hazardous_clf (PickleDataset)...
+2025-10-23 00:14:49,354 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 00:14:49,359 - kedro.pipeline.node - INFO - Running node: predict_node: predict([hazardous_clf;X_test]) -> [y_pred]
+2025-10-23 00:14:49,366 - kedro.io.data_catalog - INFO - Saving data to y_pred (ParquetDataset)...
+2025-10-23 00:14:49,372 - kedro.runner.sequential_runner - INFO - Completed node: predict_node
+2025-10-23 00:14:49,373 - kedro.runner.sequential_runner - INFO - Completed 13 out of 13 tasks
+2025-10-23 00:14:49,374 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 2.5 sec.
+2025-10-23 09:04:48,090 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 09:04:49,003 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 09:04:49,140 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 09:04:51,443 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 09:04:52,321 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-23 09:04:52,324 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 09:04:52,483 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 09:04:52,484 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-23 09:04:52,701 - kedro.io.data_catalog - INFO - Saving data to X_train (ParquetDataset)...
+2025-10-23 09:04:52,769 - kedro.io.data_catalog - INFO - Saving data to X_test (ParquetDataset)...
+2025-10-23 09:04:52,790 - kedro.io.data_catalog - INFO - Saving data to y_train (ParquetDataset)...
+2025-10-23 09:04:52,799 - kedro.io.data_catalog - INFO - Saving data to y_test (ParquetDataset)...
+2025-10-23 09:04:52,804 - kedro.io.data_catalog - INFO - Saving data to clf_cols (MemoryDataset)...
+2025-10-23 09:04:52,809 - kedro.runner.sequential_runner - INFO - Completed node: build_splits_node
+2025-10-23 09:04:52,810 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-10-23 09:04:52,811 - kedro.io.data_catalog - INFO - Loading data from X_train (ParquetDataset)...
+2025-10-23 09:04:52,837 - kedro.io.data_catalog - INFO - Loading data from y_train (ParquetDataset)...
+2025-10-23 09:04:52,849 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 09:04:52,863 - kedro.io.data_catalog - INFO - Loading data from y_test (ParquetDataset)...
+2025-10-23 09:04:52,874 - kedro.io.data_catalog - INFO - Loading data from clf_cols (MemoryDataset)...
+2025-10-23 09:04:52,876 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 09:04:52,877 - kedro.io.data_catalog - INFO - Loading data from params:models_clf (MemoryDataset)...
+2025-10-23 09:04:52,878 - kedro.pipeline.node - INFO - Running node: model_selection_node: model_selection([X_train;y_train;X_test;y_test;clf_cols;params:parameters_data_processing;params:models_clf]) -> [hazardous_clf;clf_results_table;clf_cv_results]
+2025-10-23 09:04:58,318 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\numpy\ma\core.py:2896: RuntimeWarning: invalid value encountered in cast
+  _data = np.array(data, dtype=dtype, copy=copy,
+
+2025-10-23 09:04:59,768 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\model_selection\_validation.py:540: FitFailedWarning: 
+15 fits failed out of a total of 45.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+15 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\pipeline.py", line 473, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\base.py", line 1466, in wrapper
+    estimator._validate_params()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._parameter_constraints,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.get_params(deep=False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        caller_name=self.__class__.__name__,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\utils\_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+    ...<2 lines>...
+    )
+sklearn.utils._param_validation.InvalidParameterError: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+
+2025-10-23 09:04:59,772 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\numpy\ma\core.py:2896: RuntimeWarning: invalid value encountered in cast
+  _data = np.array(data, dtype=dtype, copy=copy,
+
+2025-10-23 09:04:59,787 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\model_selection\_search.py:1103: UserWarning: One or more of the test scores are non-finite: [       nan        nan        nan 0.2126157  0.21278193 0.21165667
+ 0.28055121 0.27934859 0.2790998 ]
+  warnings.warn(
+
+2025-10-23 09:05:15,422 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\model_selection\_validation.py:540: FitFailedWarning: 
+20 fits failed out of a total of 40.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+20 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 888, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\pipeline.py", line 473, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\base.py", line 1466, in wrapper
+    estimator._validate_params()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\base.py", line 666, in _validate_params
+    validate_parameter_constraints(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._parameter_constraints,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.get_params(deep=False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        caller_name=self.__class__.__name__,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\utils\_param_validation.py", line 95, in validate_parameter_constraints
+    raise InvalidParameterError(
+    ...<2 lines>...
+    )
+sklearn.utils._param_validation.InvalidParameterError: The 'max_depth' parameter of RandomForestClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+
+2025-10-23 09:05:15,426 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\sklearn\model_selection\_search.py:1103: UserWarning: One or more of the test scores are non-finite: [       nan        nan        nan        nan 0.25494628 0.25341944
+ 0.25468962 0.25302966]
+  warnings.warn(
+
+2025-10-23 09:11:31,919 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 09:11:32,517 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 09:11:32,616 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 09:11:34,273 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 09:11:35,120 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-23 09:11:35,121 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 09:11:35,239 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 09:11:35,240 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-23 09:11:35,437 - kedro.io.data_catalog - INFO - Saving data to X_train (ParquetDataset)...
+2025-10-23 09:11:35,500 - kedro.io.data_catalog - INFO - Saving data to X_test (ParquetDataset)...
+2025-10-23 09:11:35,521 - kedro.io.data_catalog - INFO - Saving data to y_train (ParquetDataset)...
+2025-10-23 09:11:35,529 - kedro.io.data_catalog - INFO - Saving data to y_test (ParquetDataset)...
+2025-10-23 09:11:35,533 - kedro.io.data_catalog - INFO - Saving data to clf_cols (MemoryDataset)...
+2025-10-23 09:11:35,536 - kedro.runner.sequential_runner - INFO - Completed node: build_splits_node
+2025-10-23 09:11:35,537 - kedro.runner.sequential_runner - INFO - Completed 1 out of 3 tasks
+2025-10-23 09:11:35,538 - kedro.io.data_catalog - INFO - Loading data from X_train (ParquetDataset)...
+2025-10-23 09:11:35,565 - kedro.io.data_catalog - INFO - Loading data from y_train (ParquetDataset)...
+2025-10-23 09:11:35,576 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 09:11:35,589 - kedro.io.data_catalog - INFO - Loading data from y_test (ParquetDataset)...
+2025-10-23 09:11:35,600 - kedro.io.data_catalog - INFO - Loading data from clf_cols (MemoryDataset)...
+2025-10-23 09:11:35,602 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 09:11:35,603 - kedro.io.data_catalog - INFO - Loading data from params:models_clf (MemoryDataset)...
+2025-10-23 09:11:35,604 - kedro.pipeline.node - INFO - Running node: model_selection_node: model_selection([X_train;y_train;X_test;y_test;clf_cols;params:parameters_data_processing;params:models_clf]) -> [hazardous_clf;clf_results_table;clf_cv_results]
+2025-10-23 09:32:58,793 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 09:32:59,283 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 09:32:59,385 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 09:33:01,072 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 09:33:19,786 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 09:33:20,216 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 09:33:20,315 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 09:33:21,426 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 09:33:42,093 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 09:33:42,539 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 09:33:42,642 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 09:33:43,728 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 09:33:56,491 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 09:33:56,927 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 09:33:57,021 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 09:33:58,256 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 12:34:26,198 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 12:34:27,473 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 12:34:27,608 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 12:34:34,926 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 12:39:54,865 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-10-23 12:39:55,302 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-10-23 12:39:55,394 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-10-23 12:39:56,503 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-10-23 12:39:57,323 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-10-23 12:39:57,325 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-10-23 12:39:57,829 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 12:39:57,830 - kedro.pipeline.node - INFO - Running node: build_splits_node: build_splits([model_input_table;params:parameters_data_processing]) -> [X_train;X_test;y_train;y_test;clf_cols]
+2025-10-23 12:39:58,025 - kedro.io.data_catalog - INFO - Saving data to X_train (ParquetDataset)...
+2025-10-23 12:39:58,090 - kedro.io.data_catalog - INFO - Saving data to X_test (ParquetDataset)...
+2025-10-23 12:39:58,109 - kedro.io.data_catalog - INFO - Saving data to y_train (ParquetDataset)...
+2025-10-23 12:39:58,117 - kedro.io.data_catalog - INFO - Saving data to y_test (ParquetDataset)...
+2025-10-23 12:39:58,120 - kedro.io.data_catalog - INFO - Saving data to clf_cols (MemoryDataset)...
+2025-10-23 12:39:58,124 - kedro.runner.sequential_runner - INFO - Completed node: build_splits_node
+2025-10-23 12:39:58,124 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2025-10-23 12:39:58,126 - kedro.io.data_catalog - INFO - Loading data from X_train (ParquetDataset)...
+2025-10-23 12:39:58,150 - kedro.io.data_catalog - INFO - Loading data from y_train (ParquetDataset)...
+2025-10-23 12:39:58,162 - kedro.io.data_catalog - INFO - Loading data from X_test (ParquetDataset)...
+2025-10-23 12:39:58,179 - kedro.io.data_catalog - INFO - Loading data from y_test (ParquetDataset)...
+2025-10-23 12:39:58,190 - kedro.io.data_catalog - INFO - Loading data from clf_cols (MemoryDataset)...
+2025-10-23 12:39:58,191 - kedro.io.data_catalog - INFO - Loading data from params:parameters_data_processing (MemoryDataset)...
+2025-10-23 12:39:58,193 - kedro.io.data_catalog - INFO - Loading data from params:models_clf (MemoryDataset)...
+2025-10-23 12:39:58,194 - kedro.pipeline.node - INFO - Running node: model_selection_node: model_selection([X_train;y_train;X_test;y_test;clf_cols;params:parameters_data_processing;params:models_clf]) -> [hazardous_clf;clf_cv_results]
+2025-10-23 13:08:35,585 - kedro.pipeline.node - ERROR - Node model_selection_node: model_selection([X_train;y_train;X_test;y_test;clf_cols;params:parameters_data_processing;params:models_clf]) -> [hazardous_clf;clf_cv_results] failed with error: 
+Failed to save outputs of node model_selection_node: model_selection([X_train;y_train;X_test;y_test;clf_cols;params:parameters_data_processing;params:models_clf]) -> [hazardous_clf;clf_cv_results].
+The node function returned 3 output(s), whereas the node definition contains 2 output(s).
+2025-10-23 13:08:35,609 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "build_splits_node"
