@@ -1,0 +1,57 @@
+version: "3.8"
+
+x-airflow-common: &airflow-common
+  build:
+    context: .
+    dockerfile: Dockerfile
+  environment:
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__API__AUTH_BACKEND: "airflow.api.auth.backend.basic_auth"
+    AIRFLOW_UID: ${AIRFLOW_UID:-50000}
+  volumes:
+    # Montamos toda tu repo dentro del contenedor
+    - ../:/opt/airflow/spaceflights
+    # Carpeta de Airflow (DB, logs)
+    - ./logs:/opt/airflow/logs
+    - ./dags:/opt/airflow/dags
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on:
+    - redis
+    - postgres
+
+services:
+  postgres:
+    image: postgres:14
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+
+  airflow-worker:
+    <<: *airflow-common
+    command: celery worker
+
+  airflow-init:
+    <<: *airflow-common
+    command: bash -c "airflow db init && \
+                      airflow users create --username admin --password admin \
+                      --firstname Naza --lastname BKN --role Admin --email Naz.gonzalez@duocuc.cl || true"
+
+volumes:
+  postgres-db-volume:

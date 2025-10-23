@@ -1,0 +1,51 @@
+models_clf:
+  scoring: "f1"
+  cv: 5
+  n_jobs: -1
+
+ 
+  num_features:
+    - est_diameter_min
+    - est_diameter_max
+    - relative_velocity
+    - miss_distance
+    - absolute_magnitude
+    - log_velocity
+    - log_miss_distance
+    - diameter_mean
+  cat_features: ["orbiting_body"]
+
+  #LOS GRIDS :D!
+  logistic:
+    estimator: "logreg"
+    params:
+      clf__C: [0.1, 1.0, 10.0]
+      clf__penalty: ["l2"]
+      clf__solver: ["lbfgs"]
+      clf__max_iter: [1000]
+
+  knn:
+    estimator: "knn"
+    params:
+      clf__n_neighbors: [3, 5, 11]
+      clf__weights: ["uniform", "distance"]
+
+  decision_tree:
+    estimator: "dt"
+    params:
+      clf__max_depth: [null, 5, 10]
+      clf__min_samples_split: [2, 10, 20]
+
+  random_forest:
+    estimator: "rf"
+    params:
+      clf__n_estimators: [100, 200]
+      clf__max_depth: [null, 10]
+      clf__min_samples_split: [2, 10]
+
+  svc:
+    estimator: "svc"
+    params:
+      clf__C: [0.5, 1.0, 5.0]
+      clf__kernel: ["rbf", "linear"]
+      clf__probability: [true]

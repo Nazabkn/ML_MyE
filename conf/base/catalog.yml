@@ -109,3 +109,74 @@ meteorites_by_year:
   type: pandas.ParquetDataset
   filepath: data/02_intermediate/meteorites_by_year.parquet
 
+pca_features:
+  type: pandas.ParquetDataset
+  filepath: data/04_feature/pca_features.parquet
+
+kmeans_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/kmeans_model.pkl
+  versioned: true
+
+pca_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/pca_model.pkl
+  versioned: true
+
+pca_kmeans_report:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/pca_kmeans_report.csv
+  save_args:
+    index: false
+
+X_train:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/X_train.parquet
+
+X_test:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/X_test.parquet
+
+y_train:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/y_train.parquet
+
+y_test:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/y_test.parquet
+
+hazardous_clf:
+  type: pickle.PickleDataset
+  filepath: data/06_models/hazardous_clf.pkl
+  versioned: true
+
+y_pred:
+  type: pandas.ParquetDataset
+  filepath: data/07_model_output/y_pred.parquet
+
+eval_metrics:
+  type: pandas.CSVDataset
+  filepath: data/07_model_output/eval_metrics.csv
+  save_args:
+    index: false
+
+classification_report:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/classification_report.csv
+  save_args:
+    index: false
+
+hazardous_clf_unfitted:
+  type: MemoryDataset
+
+clf_results_table:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/clf_results_table.csv
+  save_args: {index: false}
+
+clf_cv_results:
+  type: pandas.CSVDataset
+  filepath: data/07_model_output/clf_cv_results.csv
+  save_args: {index: false}
+
+
