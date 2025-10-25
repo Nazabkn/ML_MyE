@@ -11,6 +11,7 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.neighbors import KNeighborsRegressor
 from sklearn.svm import SVR
 
 
@@ -40,6 +41,8 @@ def _estimator_by_name(name: str):
         return RandomForestRegressor(random_state=42)
     if name == "svr":
         return SVR(kernel="rbf")
+    if name == "knn":
+        return KNeighborsRegressor()
     raise ValueError(f"Regressor '{name}' no soportado.")
 
 
