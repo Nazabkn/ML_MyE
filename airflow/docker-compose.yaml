@@ -6,13 +6,16 @@ x-airflow-common: &airflow-common
     dockerfile: Dockerfile
   environment:
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__API__AUTH_BACKEND: "airflow.api.auth.backend.basic_auth"
     AIRFLOW_UID: ${AIRFLOW_UID:-50000}
   volumes:
-    # Montamos toda tu repo dentro del contenedor
+
     - ../:/opt/airflow/spaceflights
-    # Carpeta de Airflow (DB, logs)
+
     - ./logs:/opt/airflow/logs
     - ./dags:/opt/airflow/dags
   user: "${AIRFLOW_UID:-50000}:0"

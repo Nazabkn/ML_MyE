@@ -16,7 +16,8 @@ conf/**/*credentials*
 # DATA!
 
 data/**
-*.dvc
+
+!*.dvc
 !data/**/.gitkeep
 !data/**/README.md
 !data/08_reporting/**/*.csv
@@ -82,3 +83,4 @@ site/
 
 # Notebook pero sin chekspoints
 !notebooks/**
+/data

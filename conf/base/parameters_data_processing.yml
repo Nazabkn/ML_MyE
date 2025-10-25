@@ -1,5 +1,5 @@
 parameters_data_processing:
-  target: "hazardous"  
+  target: "hazardous"   
   task: "classification"
   metrics:
     primary: "f1"
@@ -37,3 +37,5 @@ parameters_data_processing:
     metrics:
       primary: "mae"
       secondary: ["r2", "rmse"]
+
+  threshold: 0.5 

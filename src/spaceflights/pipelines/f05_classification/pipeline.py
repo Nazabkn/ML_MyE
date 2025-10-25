@@ -7,22 +7,20 @@ def create_pipeline() -> Pipeline:
         node(
             func=build_splits,
             inputs=dict(
-            model_input_table="model_input_table",
-            params="params:parameters_data_processing",
+                model_input_table="model_input_table",
+                params="params:parameters_data_processing",
             ),
             outputs=["X_train", "X_test", "y_train", "y_test", "clf_cols"],
             name="build_splits_node",
-),
-
+        ),
 
         node(
             func=model_selection,
             inputs=[
                 "X_train", "y_train", "X_test", "y_test", "clf_cols",
-                "params:parameters_data_processing",  
+                "params:parameters_data_processing",
                 "params:models_clf",
             ],
-        
             outputs=["hazardous_clf", "clf_cv_results"],
             name="model_selection_node",
         ),
@@ -34,7 +32,6 @@ def create_pipeline() -> Pipeline:
             name="predict_node",
         ),
 
-        #nodoo para generar leaderboard
         node(
             func=export_leaderboard,
             inputs="clf_cv_results",
