@@ -4,7 +4,11 @@ from .nodes import (
     model_selection_reg,
     predict_reg,
     export_reg_leaderboard,
+    evaluate_regression,
+    plot_regression_cv,
+    plot_regression_predictions,
 )
+
 
 
 def create_pipeline() -> Pipeline:
@@ -36,10 +40,32 @@ def create_pipeline() -> Pipeline:
             outputs="y_pred_reg",
             name="predict_reg07_node",
         ),
+
+        node(
+            func=evaluate_regression,
+            inputs=["y_test_reg", "y_pred_reg"],
+            outputs="reg_eval_metrics",
+            name="evaluate_regression07_node",
+        ),
         node(
             func=export_reg_leaderboard,
             inputs="reg_cv_results",
             outputs="reg_results_table",
             name="export_reg_leaderboard07_node",
+        ),
+        node(
+            func=plot_regression_cv,
+            inputs=dict(
+                reg_results_table="reg_results_table",
+                scoring="params:models_reg.scoring",
+            ),
+            outputs="reg_results_plot",
+            name="plot_regression_leaderboard07_node",
+        ),
+        node(
+            func=plot_regression_predictions,
+            inputs=["y_test_reg", "y_pred_reg"],
+            outputs="reg_predictions_plot",
+            name="plot_regression_predictions07_node",
         ),
     ])

@@ -25,9 +25,14 @@ COPY . .
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+ENV KEDRO_PIPELINE="__default__"
 
 
 EXPOSE 8080
 
 
-CMD ["kedro", "run", "--pipeline", "classification"]
+CMD [
+  "bash",
+  "-c",
+  "if command -v dvc >/dev/null 2>&1 && [ -f dvc.yaml ]; then dvc pull; fi && kedro run --pipeline ${KEDRO_PIPELINE}"
+]

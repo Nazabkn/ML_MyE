@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import Tuple
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.metrics import (
     f1_score, recall_score, precision_score, roc_auc_score,
     confusion_matrix, roc_curve, classification_report
@@ -109,3 +110,38 @@ def export_classification_report(
             row.update({k: float(v) for k, v in stats.items()})
             rows.append(row)
     return pd.DataFrame(rows)
+
+
+def plot_confusion_matrix(final_confusion: pd.DataFrame) -> plt.Figure:
+
+    fig, ax = plt.subplots(figsize=(4, 4))
+    im = ax.imshow(final_confusion.values, cmap="Blues")
+    ax.set_xticks(range(final_confusion.shape[1]))
+    ax.set_yticks(range(final_confusion.shape[0]))
+    ax.set_xticklabels(final_confusion.columns)
+    ax.set_yticklabels(final_confusion.index)
+    ax.set_xlabel("Predicción")
+    ax.set_ylabel("Real")
+    ax.set_title("Matriz de confusión")
+
+    for i in range(final_confusion.shape[0]):
+        for j in range(final_confusion.shape[1]):
+            ax.text(j, i, int(final_confusion.iloc[i, j]), ha="center", va="center", color="black")
+
+    fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    fig.tight_layout()
+    return fig
+
+
+def plot_roc_curve(final_roc_curve: pd.DataFrame) -> plt.Figure:
+
+    fig, ax = plt.subplots(figsize=(5, 4))
+    ax.plot(final_roc_curve["fpr"], final_roc_curve["tpr"], color="#5B8FF9", label="ROC")
+    ax.plot([0, 1], [0, 1], linestyle="--", color="#7f7f7f", label="Azar")
+    ax.set_xlabel("Tasa de falsos positivos")
+    ax.set_ylabel("Tasa de verdaderos positivos")
+    ax.set_title("Curva ROC")
+    ax.legend()
+    ax.grid(alpha=0.3)
+    fig.tight_layout()
+    return fig

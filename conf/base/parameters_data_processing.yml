@@ -1,5 +1,6 @@
 parameters_data_processing:
-  target: "hazardous"   
+  target: "hazardous"
+  target_reg: "diameter_mean"
   task: "classification"
   metrics:
     primary: "f1"
@@ -32,10 +33,4 @@ parameters_data_processing:
     pca_n_components: 2
     kmeans_k: 3
 
-  regression_alt:
-    target: "diameter_mean"
-    metrics:
-      primary: "mae"
-      secondary: ["r2", "rmse"]
-
-  threshold: 0.5 
+  threshold: 0.5

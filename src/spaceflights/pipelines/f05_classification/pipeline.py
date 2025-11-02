@@ -1,5 +1,11 @@
 from kedro.pipeline import Pipeline, node, pipeline
-from .nodes import build_splits, model_selection, predict, export_leaderboard
+from .nodes import (
+    build_splits,
+    model_selection,
+    predict,
+    export_leaderboard,
+    plot_cv_results,
+)
 
 
 def create_pipeline() -> Pipeline:
@@ -37,5 +43,15 @@ def create_pipeline() -> Pipeline:
             inputs="clf_cv_results",
             outputs="clf_results_table",
             name="export_leaderboard_node",
+        ),
+        
+         node(
+            func=plot_cv_results,
+            inputs=dict(
+                clf_results_table="clf_results_table",
+                scoring="params:models_clf.scoring",
+            ),
+            outputs="clf_results_plot",
+            name="plot_classification_leaderboard_node",
         ),
     ])

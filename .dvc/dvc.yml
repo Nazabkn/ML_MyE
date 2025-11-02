@@ -1,0 +1,54 @@
+stages:
+  feature:
+    cmd: kedro run --pipeline feature
+    deps:
+      - conf/base/catalog.yml
+      - conf/base/parameters_data_processing.yml
+      - src/spaceflights/pipelines/f04_feature
+      - data/02_intermediate
+    outs:
+      - data/03_primary/model_input_table.parquet
+
+  classification:
+    cmd: kedro run --pipeline classification
+    deps:
+      - conf/base/catalog.yml
+      - conf/base/parameters_data_processing.yml
+      - conf/base/parameters_models.yml
+      - src/spaceflights/pipelines/f05_classification
+      - data/03_primary/model_input_table.parquet
+    outs:
+      - data/06_models/hazardous_clf.pkl
+      - data/08_reporting/clf_results_table.csv
+      - data/08_reporting/clf_results_plot.png
+
+  regression:
+    cmd: kedro run --pipeline regression
+    deps:
+      - conf/base/catalog.yml
+      - conf/base/parameters_data_processing.yml
+      - conf/base/parameters_data_science.yml
+      - src/spaceflights/pipelines/f07_regression
+      - data/03_primary/model_input_table.parquet
+    outs:
+      - data/06_models/best_regressor.pkl
+      - data/08_reporting/reg_results_table.csv
+      - data/08_reporting/reg_eval_metrics.csv
+      - data/08_reporting/reg_results_plot.png
+      - data/08_reporting/reg_predictions_plot.png
+
+  evaluation:
+    cmd: kedro run --pipeline evaluation
+    deps:
+      - conf/base/catalog.yml
+      - conf/base/parameters_data_processing.yml
+      - src/spaceflights/pipelines/f06_evaluation
+      - data/06_models/hazardous_clf.pkl
+    outs:
+      - data/08_reporting/final_eval_metrics.csv
+      - data/08_reporting/final_predictions.parquet
+      - data/08_reporting/final_confusion_matrix.csv
+      - data/08_reporting/final_roc_curve.csv
+      - data/08_reporting/final_classification_report.csv
+      - data/08_reporting/confusion_matrix.png
+      - data/08_reporting/roc_curve.png

@@ -3,6 +3,7 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -161,3 +162,31 @@ def export_leaderboard(clf_cv_results: pd.DataFrame) -> pd.DataFrame:
         .reset_index(drop=True)
     )
     return best_per_model
+
+
+def plot_cv_results(
+    clf_results_table: pd.DataFrame,
+    scoring: str = "f1",
+) -> plt.Figure:
+
+    if clf_results_table.empty:
+        raise ValueError("No hay resultados para graficar.")
+
+    order = clf_results_table.sort_values("cv_mean_score", ascending=True)
+
+    fig, ax = plt.subplots(figsize=(8, 4))
+    ax.barh(
+        order["model"],
+        order["cv_mean_score"],
+        xerr=order["cv_std"],
+        color="#5B8FF9",
+        alpha=0.8,
+        ecolor="#1f1f1f",
+        capsize=4,
+    )
+    ax.set_xlabel(f"{scoring} (mean ± std)")
+    ax.set_ylabel("Modelo")
+    ax.set_title("Comparativa de modelos de clasificación")
+    ax.grid(axis="x", linestyle="--", alpha=0.4)
+    fig.tight_layout()
+    return fig
