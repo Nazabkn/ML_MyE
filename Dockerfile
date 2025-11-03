@@ -31,8 +31,4 @@ ENV KEDRO_PIPELINE="__default__"
 EXPOSE 8080
 
 
-CMD [
-  "bash",
-  "-c",
-  "if command -v dvc >/dev/null 2>&1 && [ -f dvc.yaml ]; then dvc pull; fi && kedro run --pipeline ${KEDRO_PIPELINE}"
-]
+CMD ["bash", "-c", "if command -v dvc >/dev/null 2>&1 && [ -f dvc.yaml ]; then dvc pull; fi && kedro run --pipeline=${KEDRO_PIPELINE}"]

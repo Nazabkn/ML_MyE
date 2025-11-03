@@ -1,153 +1,147 @@
- ⭐ Proyecto ML Astronomía – CRISP-DM ⭐
+ ⭐ Proyecto ML Astronomía 🌙
 
-Este repositorio contiene un proyecto de Machine Learning desarrollado con Kedro, siguiendo la metodología CRISP-DM hasta la Fase 3 (Preparación de los Datos). El enfoque está en la exploración y preparación de datos astronómicos (asteroides y meteoritos) para futuros modelos predictivos.
-___________________________________________________________________________
+Machine Learning con Kedro — Metodología CRISP-DM (Completo)
 
-♡  ∩____∩ 
-  („• ֊ •„)♡
-|￣U U￣￣￣￣￣￣￣￣￣|
-|  Estructura!        |   
-￣￣￣￣￣￣￣￣￣￣￣￣
+Este proyecto analiza datos astronómicos de asteroides y meteoritos para clasificar peligrosidad y predecir su diámetro promedio usando múltiples modelos de Machine Learning.
 
-spaceflights/
-  conf/                  (Configuración de Kedro)
-      base/catalog.yml    (Catálogo de datasets)
+Incluye:
+✅ Pipelines Kedro (Clasificación + Regresión + Reporting)
+✅ Airflow para orquestación
+✅ Docker para despliegue
+✅ DVC + DagsHub para versionado de datos
+✅ Modelado completo y evaluación 📊
 
-   data/
-     01_raw/              (Datos originales)
-       02_intermediate/   (Datos limpios y preprocesados)
-       03_primary/        (Datos unificados)
+｡𖦹°‧ Estructura del Proyecto ｡𖦹°‧
 
-   notebooks/             Notebooks de análisis
-       01_business.ipynb
-       02_data_understanding.ipynb
-       03_preprocessing.ipynb
-
-   src/spaceflights/      
-        pipelines/
-        data_processing/
-        __ini__.py
-
- requirements.txt       
- README.md             
- dvc.yaml / .dvc/       
-
-___________________________________________________________________________
-
-
-｡ﾟﾟ･ ｡ ･ﾟﾟ ｡ 
-ﾟ。Datasets utilizados:
-　ﾟ･｡ ･ﾟ 
-
-1. Near Earth Objects (NEO) API de NASA
-
-
-2. Neo_v2 (Venia en conjunto con NEO)
-
-
-3. Meteorite Landings
+        spaceflights/
+        │
+        ├── conf/
+        │   └── base/catalog.yml        # Definición de datasets versionados
+        │
+        ├── data/                       # CONTROLADO POR DVC ✅
+        │   ├── 01_raw/
+        │   ├── 02_intermediate/
+        │   ├── 03_primary/
+        │   ├── 05_model_input/
+        │   ├── 06_models/
+        │   ├── 07_model_output/
+        │   └── 08_reporting/
+        │
+        ├── notebooks/
+        │   ├── 01_business.ipynb
+        │   ├── 02_data_understanding.ipynb
+        │   ├── 03_preprocessing.ipynb
+        │   └── 08_reporting/00_report.ipynb
+        │
+        ├── src/spaceflights/
+        │   ├── pipelines/              # f01..f08 pipelines Kedro
+        │   ├── daemon_airflow.py       # DAG de Airflow
+        │   └── __init__.py
+        │
+        ├── Dockerfile
+        ├── dvc.yaml
+        ├── requirements.txt
+        └── README.md
 
 
+࣪ ִֶָ☾. Datasets utilizados ࣪ ִֶָ☾.
 
-Estos datasets se encuentran en data/01_raw luego fueron procesados para que esten en el data/03_primary :D
+NEO
+Fuente: NASA API
+Descripción: Objetos cercanos a la Tierra
 
+NEO_v2
+Fuente: NASA 
+Descripción: Velocidades / distancias
 
-___________________________________________________________________________
+Meteorite Landings
+Fuente: NASA Open Data 
+Descripción: Registros reales de impacto
 
+❀ CRISP-DM aplicado ❀
 
-𐙚¡El uso de la metodología CRISP-DM en el proyecto!𐙚
- 
-Fase 1 – Comprensión del Negocio
+Fase 1 – Comprensión del negocio	
+- 01_business.ipynb
 
-La definición
+Fase 2 – Comprensión de datos
+- 02_data_understanding.ipynb
 
-Los objetivos
+Fase 3 – Preparación de datos	
+- 03_preprocessing.ipynb
 
-La documentación del plan en notebooks/01_business.ipynb :D
---------------------------------------------------------------------
+Fase 4 – Modelado	
+- Pipelines f05 y f07
 
-Fase 2 – Comprensión de los Datos
+Fase 5 – Evaluación		
+- 08_reporting/00_report.ipynb
 
-Recolección de 3 datasets astronómicos
-
-Exploración inicial de datos con estadísticas y visualizaciones
-
-Habian dos dataset igual asi :'v 
-
-Identificación de valores nulos, tipos de variables y calidad de los datos
-----------------------------------------------------------------------
-
-Fase 3 – Preparación de los Datos
-
-Limpieza de columnas con valores nulos
-
-´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
-Extracción de año desde el nombre de los asteroides
-
-Promedio del diámetro estimado
-
-Transformaciones logarítmicas
-´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´
-
-Unificación de meteoritos y asteroides por año en model_input_table.parquet
-
-Resultados documentados en 03_preprocessing.ipynb
+Fase 6 – Despliegue	
+- Preparado para avanzarlo después
 
 
+✦ Modelos implementados ✦
 
-___________________________________________________________________________
+Clasificación — ¿Es peligroso el asteroide?
+
+Modelos:
+
+- Logistic Regression
+- KNN
+- Random Forest
+- XGBoost/GradientBoost 
+- SVC 
+
+Regresión — ¿Predictor del diámetro del objeto?
+
+Modelos:
+
+- Linear Regression 
+- Ridge 
+- Lasso 
+- Random Forest Regressor 
+- SVR 
+
+✮ Reportes & Gráficos ✮
+
+- 08_reporting/ contiene:
+  - Archivo	Contenido
+  - confusion_matrix.png	Matriz de confusión final
+  - roc_curve.png	Curva ROC
+  - cv_bars.png	Comparación CV
+  - reg_results_table.csv	Ranking de modelos de    regresión
+  - final_classification_report.csv	Informe final sklearn
 
 
- /\ _/\
-( • . •)
-/~     \  Instalación y ejecución
+𔓘 Airflow 𔓘
 
-1.- Clonar el repositorio
+Pipeline DAG ejecuta:
+Clasificación → Regresión → Reportes
+
+Ejecutar Airflow local:
+airflow standalone
+
+
+𓆡 Docker 𓆝
+
+Construir imagen:
+docker build -t kedro-spaceflights .
+
+Ejecutar:
+docker run -it kedro-spaceflights
+
+☘︎ Versionado de Datos con DVC + DagsHub ☘︎
+
+Descargar datos: 
+dvc pull
+
+Subir cambios:
+dvc push
+
+☀︎ Reproducibilidad completa ☀︎
 
 git clone https://github.com/Nazabkn/ML_MyE.git
 cd ML_MyE
-
-2.- Crear entorno virtual e instalar dependencias
-
 python -m venv .venv
-.venv\Scripts\activate      (Windows)
-
-lo siento profe no hay para mac :P!, 
-broma, si hay: 
-
-source .venv/bin/activate    (Mac o linux)
-
+.venv\Scripts\activate
 pip install -r requirements.txt
-
-3. Ejecutar Kedro
-
-Para correr todo el pipeline:
-
 kedro run
-
-
-4. Sincronizar datos con DVC
-
-Este repo usa DVC con DagsHub para almacenar datos versionados:
-
-dvc pull   esta es para descargar datos
-dvc push   y esta para subir cambios
-
-___________________________________________________________________________
-
-
-  ✿   Documentación    ✿
-
-Los notebooks sirven como bitácora de trabajo y prototipado
-(No use casi ningún comentario, estaba fascinada con los comandos que encontraba en internet)
-
-La ejecución automatizada está en los pipelines de Kedro
-
-
-___________________________________________________________________________
-
-
----Estado del proyecto---   (˶╹ᵕ╹˶) kirby
- 
-Este proyecto se entrega hasta Fase 3 de CRISP-DM
-Las fases posteriores (Modelado, Evaluación y Despliegue) las haré pronto, saludos!
