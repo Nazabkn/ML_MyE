@@ -5,20 +5,20 @@ Machine Learning con Kedro — Metodología CRISP-DM (Completo)
 Este proyecto analiza datos astronómicos de asteroides y meteoritos para clasificar peligrosidad y predecir su diámetro promedio usando múltiples modelos de Machine Learning.
 
 Incluye:
-✅ Pipelines Kedro (Clasificación + Regresión + Reporting)
-✅ Airflow para orquestación
-✅ Docker para despliegue
-✅ DVC + DagsHub para versionado de datos
-✅ Modelado completo y evaluación 📊
+╰┈➤ Pipelines Kedro (Clasificación + Regresión + Reporting)
+╰┈➤ Airflow para orquestación
+╰┈➤ Docker para despliegue
+╰┈➤ DVC + DagsHub para versionado de datos
+╰┈➤ Modelado completo y evaluación 📊
 
 ｡𖦹°‧ Estructura del Proyecto ｡𖦹°‧
 
         spaceflights/
         │
         ├── conf/
-        │   └── base/catalog.yml        # Definición de datasets versionados
+        │   └── base/catalog.yml        
         │
-        ├── data/                       # CONTROLADO POR DVC ✅
+        ├── data/                      
         │   ├── 01_raw/
         │   ├── 02_intermediate/
         │   ├── 03_primary/
