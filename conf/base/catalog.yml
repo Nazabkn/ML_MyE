@@ -214,7 +214,7 @@ final_eval_metrics:
   filepath: data/08_reporting/final_eval_metrics.csv
   save_args: { index: false }
 
-  reg_results_plot:
+reg_results_plot:
   type: matplotlib.MatplotlibWriter
   filepath: data/08_reporting/reg_results_plot.png
 
@@ -246,9 +246,7 @@ classification_report:
   type: pandas.CSVDataset
   filepath: data/08_reporting/classification_report.csv
   save_args: { index: false }
-
-
-
+  
 confusion_matrix_plot:
   type: matplotlib.MatplotlibWriter
   filepath: data/08_reporting/confusion_matrix.png
