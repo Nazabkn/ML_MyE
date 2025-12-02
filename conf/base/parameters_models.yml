@@ -26,7 +26,7 @@ models_clf:
     estimator: "rf"
     params:
       clf__n_estimators: [100, 200]
-      clf__max_depth: [null, 10]  
+      clf__max_depth: [null, 10]
       clf__min_samples_split: [2, 5]
 
   svc:
@@ -34,3 +34,11 @@ models_clf:
     params:
       clf__C: [0.5, 1, 2]
       clf__kernel: ["rbf", "linear"]
+
+
+  gradient_boosting:
+    estimator: "gb"
+    params:
+      clf__n_estimators: [80, 120]
+      clf__learning_rate: [0.05, 0.1]
+      clf__max_depth: [2, 3]
