@@ -75,6 +75,14 @@ model_input_table:
   type: pandas.ParquetDataset
   filepath: data/03_primary/model_input_table.parquet
 
+model_input_with_clusters:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/model_input_with_clusters.parquet
+
+unsupervised_model_input_with_clusters:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/unsupervised_model_input_with_clusters.parquet
+
 neo_clean:
   type: pandas.ParquetDataset
   filepath: data/03_primary/neo_clean.parquet
@@ -90,7 +98,18 @@ pca_features:
   type: pandas.ParquetDataset
   filepath: data/04_feature/pca_features.parquet
 
+pca_components:
+  type: pandas.ParquetDataset
+  filepath: data/04_feature/pca_components.parquet
 
+umap_embedding:
+  type: pandas.ParquetDataset
+  filepath: data/04_feature/umap_embedding.parquet
+
+pca_loadings:
+  type: pandas.CSVDataset
+  filepath: data/04_feature/pca_loadings.csv
+  save_args: { index: true }
 
 X_train:
   type: pandas.ParquetDataset
@@ -155,6 +174,10 @@ pca_model:
   filepath: data/06_models/pca_model.pkl
   versioned: true
 
+unsupervised_pca_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/unsupervised_pca_model.pkl
+  versioned: true
 
 model_output:
   type: pandas.ParquetDataset
@@ -198,6 +221,36 @@ pca_kmeans_report:
   type: pandas.CSVDataset
   filepath: data/08_reporting/pca_kmeans_report.csv
   save_args: { index: false }
+
+unsupervised_cluster_labels:
+  type: pandas.ParquetDataset
+  filepath: data/08_reporting/unsupervised_cluster_labels.parquet
+
+unsupervised_cluster_metrics:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/unsupervised_cluster_metrics.csv
+  save_args: { index: false }
+
+unsupervised_cluster_plots:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/unsupervised_clusters.png
+
+pca_variance:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/pca_variance.csv
+  save_args: { index: false }
+
+pca_variance_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/pca_variance.png
+
+pca_biplot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/pca_biplot.png
+
+umap_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/umap_plot.png
 
 clf_results_table:
   type: pandas.CSVDataset

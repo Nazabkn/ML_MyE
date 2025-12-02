@@ -13,7 +13,7 @@ def create_pipeline() -> Pipeline:
         node(
             func=build_splits,
             inputs=dict(
-                model_input_table="model_input_table",
+                model_input_table="model_input_with_clusters",
                 params="params:parameters_data_processing",
             ),
             outputs=["X_train", "X_test", "y_train", "y_test", "clf_cols"],

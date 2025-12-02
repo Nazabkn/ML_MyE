@@ -13,4 +13,7 @@ pandas
 scikit-learn~=1.5.1
 seaborn~=0.12.1
 matplotlib
+umap-learn
+pyod
+mlxtend
 dvc[s3]

@@ -8,17 +8,28 @@ from spaceflights.pipelines.f04_feature.pipeline import create_pipeline as p_fea
 from spaceflights.pipelines.f05_classification.pipeline import create_pipeline as p_classif
 from spaceflights.pipelines.f06_evaluation.pipeline import create_pipeline as p_eval
 from spaceflights.pipelines.f07_regression.pipeline import create_pipeline as p_regression
+from spaceflights.pipelines.unsupervised_learning import create_pipeline as p_unsupervised
 
 def register_pipelines() -> dict[str, Pipeline]:
     understanding = p_understanding()
     preprocessing = p_preprocessing()
     unification = p_unification()
     feature = p_feature()
+    unsupervised = p_unsupervised()
     classification = p_classif()
     evaluation = p_eval()
     regression = p_regression()
 
-    default = understanding + preprocessing + unification + feature + classification + evaluation + regression
+    default = (
+        understanding
+        + preprocessing
+        + unification
+        + feature
+        + unsupervised
+        + classification
+        + evaluation
+        + regression
+    )
 
     return {
         "__default__": default,
@@ -26,6 +37,7 @@ def register_pipelines() -> dict[str, Pipeline]:
         "preprocessing": preprocessing,
         "unification": unification,
         "feature": feature,
+        "unsupervised_learning": unsupervised,
         "classification": classification,
         "evaluation": evaluation,
         "regression": regression,

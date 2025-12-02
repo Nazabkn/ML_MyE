@@ -16,7 +16,7 @@ def create_pipeline() -> Pipeline:
         node(
             func=build_splits_reg,
             inputs=dict(
-                model_input_table="model_input_table",
+                model_input_table="model_input_with_clusters",
                 params="params:parameters_data_processing",
             ),
             outputs=["X_train_reg", "X_test_reg", "y_train_reg", "y_test_reg", "reg_cols"],

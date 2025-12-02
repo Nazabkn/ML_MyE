@@ -22,8 +22,10 @@ ENV PIP_NO_CACHE_DIR=1 \
 
 COPY requirements.txt ./
 RUN python -m pip install --upgrade pip \
-    && python -m pip install -r requirements.txt
+    && python -m pip install --no-cache-dir -r requirements.txt
 
+# Librerías adicionales críticas para el pipeline no supervisado
+RUN python -m pip install --no-cache-dir scikit-learn umap-learn pyod mlxtend
 # 3.- Copiar el resto del proyecto
 COPY . .
 
