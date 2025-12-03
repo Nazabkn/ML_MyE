@@ -1534,3 +1534,51 @@ You can resume the pipeline run from the nearest nodes with persisted inputs by 
 2025-11-08 16:12:37,354 - kedro.runner.sequential_runner - INFO - Completed 24 out of 24 tasks
 2025-11-08 16:12:37,355 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 2001.0 sec.
 2025-11-08 16:12:37,355 - kedro.io.data_catalog - INFO - Loading data from clf_results_plot (MemoryDataset)...
+2025-12-02 22:09:51,560 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-12-02 22:09:52,748 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-12-02 22:09:52,924 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-12-02 22:09:53,004 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-12-02 22:17:09,040 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-12-02 22:17:09,548 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-12-02 22:17:09,654 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-12-02 22:17:09,712 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-12-02 22:21:48,358 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-12-02 22:21:48,848 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-12-02 22:21:48,953 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-12-02 22:21:57,204 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-12-02 22:27:07,630 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-12-02 22:27:08,114 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-12-02 22:27:08,225 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-12-02 22:27:09,587 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-12-02 22:31:28,157 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-12-02 22:31:28,638 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-12-02 22:31:28,748 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-12-02 22:31:30,057 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-12-02 22:36:05,952 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
+2025-12-02 22:36:06,434 - py.warnings - WARNING - C:\ML\spaceflights\.venv\Lib\site-packages\kedro\framework\cli\utils.py:111: KedroDeprecationWarning: DeprecationWarning: 'kedro run' flag '--namespace' is deprecated and will be replaced with '--namespaces' from Kedro 1.0.0 to allow running multiple namespaces. 
+  warnings.warn(message, KedroDeprecationWarning)
+
+2025-12-02 22:36:06,540 - kedro.framework.session.session - INFO - Kedro project spaceflights
+2025-12-02 22:36:07,947 - kedro_telemetry.plugin - INFO - Kedro is sending anonymous usage data with the sole purpose of improving the product. No personal data or IP addresses are stored on our side. To opt out, set the `KEDRO_DISABLE_TELEMETRY` or `DO_NOT_TRACK` environment variables, or create a `.telemetry` file in the current working directory with the contents `consent: false`. To hide this message, explicitly grant or deny consent. Read more at https://docs.kedro.org/en/stable/configuration/telemetry.html
+2025-12-02 22:36:08,819 - kedro.runner.sequential_runner - INFO - Using synchronous mode for loading and saving data. Use the --async flag for potential performance gains. https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipeline.html#load-and-save-asynchronously
+2025-12-02 22:36:08,820 - kedro.io.data_catalog - INFO - Loading data from model_input_table (ParquetDataset)...
+2025-12-02 22:36:09,353 - kedro.io.data_catalog - INFO - Loading data from params:unsupervised_learning (MemoryDataset)...
+2025-12-02 22:36:09,355 - kedro.pipeline.node - INFO - Running node: run_clustering_algorithms: run_clustering([model_input_table;params:unsupervised_learning]) -> [unsupervised_cluster_labels;unsupervised_cluster_metrics;unsupervised_cluster_plots;unsupervised_model_input_with_clusters]
+2025-12-02 22:39:26,725 - kedro.io.data_catalog - INFO - Saving data to unsupervised_cluster_labels (ParquetDataset)...
+2025-12-02 22:39:26,750 - kedro.io.data_catalog - INFO - Saving data to unsupervised_cluster_metrics (CSVDataset)...
+2025-12-02 22:39:26,756 - kedro.io.data_catalog - INFO - Saving data to unsupervised_cluster_plots (MatplotlibWriter)...
+2025-12-02 22:39:29,612 - kedro.io.data_catalog - INFO - Saving data to unsupervised_model_input_with_clusters (ParquetDataset)...
+2025-12-02 22:39:29,691 - kedro.runner.sequential_runner - INFO - Completed node: run_clustering_algorithms
+2025-12-02 22:39:29,692 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2025-12-02 22:39:29,693 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully in 200.9 sec.
+2025-12-02 23:00:45,484 - kedro.framework.project - INFO - Using 'conf\logging.yml' as logging configuration. You can change this by setting the KEDRO_LOGGING_CONFIG environment variable accordingly.
